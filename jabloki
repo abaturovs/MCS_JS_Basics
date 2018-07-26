@@ -1,0 +1,13 @@
+let skolkodeneg = prompt('Сколько у вас денег с собой?')
+let skolkojablok = prompt('Сколько вы купили яблок?')
+let skolkobatonov = prompt('Сколько вы купили батонов?')
+let skolkoodno = prompt('Сколько стоит одно яблоко?')
+let stoimostjablok = skolkoodno * skolkojablok
+let skolkoodin = prompt('Сколько один батон?')
+let stoimostbatonov = skolkoodin * skolkobatonov
+let vse = stoimostbatonov + stoimostjablok
+if (vse > skolkodeneg) { 
+document.bodyinnerHTML = "false"
+} else {
+  document.bodyinnerHTML = "true"
+}
